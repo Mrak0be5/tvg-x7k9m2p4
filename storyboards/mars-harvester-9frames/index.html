@@ -337,13 +337,13 @@
   <main>
     <section class="intro">
       <h1>Раскадровка нейрохука</h1>
-      <p class="lead">Инженер чинит огромный харвестер высотой примерно в два её роста, открывает кабину, запрыгивает внутрь и разгоняется от первого лица к синему голему.</p>
+      <p class="lead">Инженер чинит новый золотой шестиколёсный харвестер, замечает синего Голема, открывает верхнюю крышку, запрыгивает в кабину и запускает переход от первого лица в gameplay.</p>
       <div class="stats" aria-label="Параметры раскадровки">
         <span class="stat">9 кадров</span>
         <span class="stat">6 секунд</span>
         <span class="stat">Вертикальный хук</span>
         <span class="stat">GPT Image 2</span>
-        <span class="stat">v2 · крупный харвестер</span>
+        <span class="stat">v3 · новый харвестер</span>
       </div>
     </section>
 
@@ -368,10 +368,15 @@
     </section>
 
     <section class="sheet" aria-labelledby="sheet-title">
-      <img src="images/storyboard-preview-v2.webp" alt="Полная раскадровка из девяти кадров с увеличенным харвестером" width="1080" height="1660" fetchpriority="high" />
+      <img src="images/storyboard-preview-v3.jpg" alt="Новая раскадровка из девяти кадров с золотым шестиколёсным харвестером" width="1200" height="2209" fetchpriority="high" />
       <div class="sheet-actions">
-        <h2 class="sheet-title" id="sheet-title">Полный лист 3×3</h2>
-        <a class="btn primary" href="originals/storyboard-3x3-v2.png" download>⬇ Скачать лист PNG</a>
+        <h2 class="sheet-title" id="sheet-title">Новая раскадровка 3×3 · v3</h2>
+        <a class="btn primary" href="originals/storyboard-3x3-v3.png" download>⬇ Скачать лист PNG</a>
+        <div class="sheet-downloads" aria-label="Материалы для генерации">
+          <a class="btn" href="originals/seedance-2-hook-6s-final-prompt-v3.md" download>Промт Seedance · MD</a>
+          <a class="btn" href="originals/storyboard-v3-imagegen-prompts.md" download>Промты кадров · MD</a>
+          <a class="btn" href="originals/storyboard-v3-qa.md" download>QA-отчёт · MD</a>
+        </div>
       </div>
     </section>
 
@@ -397,15 +402,15 @@
 
   <script>
     const frames = [
-      ["00.00", "Ремонт харвестера"],
-      ["00.70", "Последний поворот ключа"],
-      ["01.40", "Рука тянется к защёлке"],
-      ["02.00", "Кабина открывается"],
-      ["02.65", "Подъём на подножку"],
-      ["03.25", "Прыжок в кабину"],
-      ["03.75", "Переход через плечо"],
-      ["04.35", "Запуск двигателя"],
-      ["05.30", "POV-разгон к голему"]
+      ["00.00", "Ремонт боковой трубы"],
+      ["00.55", "Последний поворот ключа"],
+      ["01.20", "Появление синего Голема"],
+      ["01.85", "Рука на защёлке"],
+      ["02.50", "Крышка открыта"],
+      ["03.20", "Посадка в кабину"],
+      ["04.00", "Вид через плечо"],
+      ["04.55", "Кнопка запуска"],
+      ["05.20", "Переход в gameplay"]
     ];
 
     const gallery = document.getElementById("gallery");
@@ -416,7 +421,7 @@
     let activeIndex = 0;
 
     function fileName(index, extension) {
-      return `panel-${String(index + 1).padStart(2, "0")}-v2.${extension}`;
+      return `panel-${String(index + 1).padStart(2, "0")}-v3.${extension}`;
     }
 
     frames.forEach(([time, title], index) => {
@@ -424,7 +429,7 @@
       card.className = "card";
       card.innerHTML = `
         <button class="frame-open" type="button" aria-label="Открыть кадр ${index + 1}">
-          <img src="images/${fileName(index, "webp")}" alt="Кадр ${index + 1}: ${title}" width="720" height="1080" loading="lazy" decoding="async" />
+          <img src="images/${fileName(index, "webp")}" alt="Кадр ${index + 1}: ${title}" width="720" height="1280" loading="lazy" decoding="async" />
           <span class="number">${String(index + 1).padStart(2, "0")}</span>
         </button>
         <div class="card-body">

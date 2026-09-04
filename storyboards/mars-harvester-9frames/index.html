@@ -163,6 +163,20 @@
       font-weight: 700;
     }
 
+    .sheet-downloads {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .sheet-downloads .btn {
+      width: 100%;
+      min-height: 38px;
+      padding: 8px;
+      font-size: .75rem;
+    }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -298,6 +312,7 @@
       .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
       .card-body { padding: 12px; }
       .sheet { padding: 16px; }
+      .sheet-downloads { grid-template-columns: repeat(4, minmax(0, 1fr)); }
     }
 
     @media (max-width: 420px) {
@@ -333,10 +348,16 @@
     </section>
 
     <section class="sheet" aria-labelledby="reference-title">
-      <img src="images/mars-harvester-open-cockpit-reference-v1.webp" alt="Опорный референс золотого шестиколёсного харвестера с открытой кабиной" width="1080" height="720" fetchpriority="high" />
+      <img src="images/seedance20-harvester-reference-pack-v1.webp" alt="Seedance 2.0 референс-пак золотого шестиколёсного харвестера с открытой кабиной в четырёх ракурсах" width="1080" height="722" fetchpriority="high" />
       <div class="sheet-actions">
-        <h2 class="sheet-title" id="reference-title">Референс харвестера · открытая кабина</h2>
-        <a class="btn primary" href="originals/mars-harvester-open-cockpit-reference-v1.png" download>⬇ Скачать PNG</a>
+        <h2 class="sheet-title" id="reference-title">Seedance 2.0 · референс-пак харвестера</h2>
+        <a class="btn primary" href="originals/seedance20-harvester-reference-pack-v1.png" download>⬇ Скачать лист 2×2</a>
+        <div class="sheet-downloads" aria-label="Скачать отдельные ракурсы">
+          <a class="btn" href="originals/seedance20-view-01-front-left-v1.png" download>01 · 3/4 спереди</a>
+          <a class="btn" href="originals/seedance20-view-02-left-side-v1.png" download>02 · левый бок</a>
+          <a class="btn" href="originals/seedance20-view-03-rear-right-v1.png" download>03 · 3/4 сзади</a>
+          <a class="btn" href="originals/seedance20-view-04-top-v1.png" download>04 · сверху</a>
+        </div>
       </div>
     </section>
 

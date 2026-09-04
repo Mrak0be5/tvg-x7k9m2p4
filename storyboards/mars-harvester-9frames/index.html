@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0d0f14" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23161a22'/%3E%3Cpath d='M12 38h40v10H12zM19 22h26l7 16H12z' fill='%23d98b21'/%3E%3Ccircle cx='21' cy='49' r='7' fill='%23343b49'/%3E%3Ccircle cx='43' cy='49' r='7' fill='%23343b49'/%3E%3Cpath d='M32 22V8l9 14z' fill='%23ff6b4a'/%3E%3C/svg%3E" />
+  <title>Mars Harvester · Раскадровка 9 кадров</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d0f14;
+      --surface: #161a22;
+      --surface-2: #1c2230;
+      --text: #f5f7fb;
+      --muted: #98a1b5;
+      --line: #2a3142;
+      --accent: #f0a500;
+      --accent-2: #ff6b4a;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(900px 520px at 15% -10%, #252b3b 0%, transparent 62%),
+        var(--bg);
+    }
+
+    a { color: inherit; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px max(16px, env(safe-area-inset-left));
+      padding-top: max(12px, env(safe-area-inset-top));
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      background: rgba(13,15,20,.9);
+      backdrop-filter: blur(16px);
+    }
+
+    .brand {
+      min-width: 0;
+      text-decoration: none;
+      font-size: .95rem;
+      font-weight: 760;
+      letter-spacing: .01em;
+    }
+
+    .brand span { color: var(--accent); }
+
+    .btn {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 9px 13px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: var(--surface-2);
+      color: var(--text);
+      font: inherit;
+      font-size: .86rem;
+      font-weight: 650;
+      line-height: 1;
+      text-decoration: none;
+      cursor: pointer;
+      touch-action: manipulation;
+    }
+
+    .btn.primary {
+      border: 0;
+      color: #211500;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    }
+
+    main {
+      width: min(100%, 1120px);
+      margin: 0 auto;
+      padding: 24px 16px max(52px, env(safe-area-inset-bottom));
+    }
+
+    .intro {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-size: clamp(1.75rem, 7vw, 3.2rem);
+      line-height: 1.02;
+      letter-spacing: -.04em;
+    }
+
+    .lead {
+      max-width: 680px;
+      margin: 0;
+      color: var(--muted);
+      font-size: .98rem;
+      line-height: 1.5;
+    }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 2px;
+    }
+
+    .stat {
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: #cbd2df;
+      background: rgba(28,34,48,.72);
+      font-size: .78rem;
+    }
+
+    .sheet {
+      display: grid;
+      gap: 13px;
+      margin-bottom: 26px;
+      padding: 13px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+      box-shadow: 0 24px 56px rgba(0,0,0,.28);
+    }
+
+    .sheet img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      background: #111;
+    }
+
+    .sheet-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sheet-title {
+      margin: 0;
+      font-size: .95rem;
+      font-weight: 700;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: var(--surface);
+      box-shadow: 0 14px 34px rgba(0,0,0,.22);
+    }
+
+    .frame-open {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      background: #111;
+      cursor: zoom-in;
+      touch-action: manipulation;
+    }
+
+    .frame-open img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      background: #111;
+    }
+
+    .number {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      display: grid;
+      place-items: center;
+      min-width: 34px;
+      height: 28px;
+      padding: 0 8px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 9px;
+      background: rgba(8,10,14,.78);
+      color: #fff;
+      font-size: .78rem;
+      font-weight: 800;
+      backdrop-filter: blur(8px);
+    }
+
+    .card-body {
+      display: grid;
+      gap: 8px;
+      padding: 10px;
+    }
+
+    .card-title {
+      min-height: 2.6em;
+      margin: 0;
+      font-size: .82rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .card-meta {
+      color: var(--muted);
+      font-size: .72rem;
+    }
+
+    .download {
+      min-height: 38px;
+      width: 100%;
+      font-size: .78rem;
+    }
+
+    dialog {
+      width: 100vw;
+      max-width: none;
+      height: 100dvh;
+      max-height: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: rgba(4,5,7,.96);
+      color: var(--text);
+    }
+
+    dialog::backdrop { background: rgba(0,0,0,.8); }
+
+    .viewer {
+      height: 100%;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 10px;
+      padding: max(12px, env(safe-area-inset-top)) 12px max(12px, env(safe-area-inset-bottom));
+    }
+
+    .viewer-head,
+    .viewer-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .viewer-head strong {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: .92rem;
+    }
+
+    .viewer-media {
+      min-height: 0;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .viewer-media img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+      object-fit: contain;
+    }
+
+    @media (min-width: 720px) {
+      main { padding-top: 38px; }
+      .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+      .card-body { padding: 12px; }
+      .sheet { padding: 16px; }
+    }
+
+    @media (max-width: 420px) {
+      .topbar .btn { padding-inline: 11px; font-size: .79rem; }
+      main { padding-inline: 12px; }
+      .gallery { gap: 9px; }
+      .card-title { font-size: .76rem; }
+      .sheet-actions .btn { width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../../">Mars <span>Harvester</span></a>
+    <a class="btn" href="../../">← Видео</a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Раскадровка нейрохука</h1>
+      <p class="lead">Инженер чинит харвестер, открывает кабину, запрыгивает внутрь и разгоняется от первого лица к синему голему.</p>
+      <div class="stats" aria-label="Параметры раскадровки">
+        <span class="stat">9 кадров</span>
+        <span class="stat">6 секунд</span>
+        <span class="stat">Вертикальный хук</span>
+        <span class="stat">GPT Image 2</span>
+      </div>
+    </section>
+
+    <section class="sheet" aria-labelledby="sheet-title">
+      <img src="images/storyboard-preview.webp" alt="Полная раскадровка из девяти кадров" width="1080" height="1660" fetchpriority="high" />
+      <div class="sheet-actions">
+        <h2 class="sheet-title" id="sheet-title">Полный лист 3×3</h2>
+        <a class="btn primary" href="originals/storyboard-3x3.png" download>⬇ Скачать лист PNG</a>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery" aria-label="Отдельные кадры раскадровки"></section>
+  </main>
+
+  <dialog id="viewer">
+    <div class="viewer">
+      <div class="viewer-head">
+        <strong id="viewerTitle">Кадр</strong>
+        <button class="btn" id="viewerClose" type="button" aria-label="Закрыть просмотр">✕ Закрыть</button>
+      </div>
+      <div class="viewer-media">
+        <img id="viewerImage" src="" alt="" />
+      </div>
+      <div class="viewer-foot">
+        <button class="btn" id="prev" type="button">← Назад</button>
+        <a class="btn primary" id="viewerDownload" href="#" download>⬇ PNG</a>
+        <button class="btn" id="next" type="button">Дальше →</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    const frames = [
+      ["00.00", "Ремонт харвестера"],
+      ["00.70", "Последний поворот ключа"],
+      ["01.40", "Рука тянется к защёлке"],
+      ["02.00", "Кабина открывается"],
+      ["02.65", "Подъём на подножку"],
+      ["03.25", "Прыжок в кабину"],
+      ["03.75", "Переход через плечо"],
+      ["04.35", "Запуск двигателя"],
+      ["05.30", "POV-разгон к голему"]
+    ];
+
+    const gallery = document.getElementById("gallery");
+    const viewer = document.getElementById("viewer");
+    const viewerImage = document.getElementById("viewerImage");
+    const viewerTitle = document.getElementById("viewerTitle");
+    const viewerDownload = document.getElementById("viewerDownload");
+    let activeIndex = 0;
+
+    function fileName(index, extension) {
+      return `panel-${String(index + 1).padStart(2, "0")}.${extension}`;
+    }
+
+    frames.forEach(([time, title], index) => {
+      const card = document.createElement("article");
+      card.className = "card";
+      card.innerHTML = `
+        <button class="frame-open" type="button" aria-label="Открыть кадр ${index + 1}">
+          <img src="images/${fileName(index, "webp")}" alt="Кадр ${index + 1}: ${title}" width="720" height="1080" loading="lazy" decoding="async" />
+          <span class="number">${String(index + 1).padStart(2, "0")}</span>
+        </button>
+        <div class="card-body">
+          <h2 class="card-title">${title}</h2>
+          <div class="card-meta">${time} сек</div>
+          <a class="btn download" href="originals/${fileName(index, "png")}" download>⬇ Скачать PNG</a>
+        </div>`;
+      card.querySelector("button").addEventListener("click", () => openViewer(index));
+      gallery.appendChild(card);
+    });
+
+    function renderViewer() {
+      const [time, title] = frames[activeIndex];
+      viewerImage.src = `images/${fileName(activeIndex, "webp")}`;
+      viewerImage.alt = `Кадр ${activeIndex + 1}: ${title}`;
+      viewerTitle.textContent = `${String(activeIndex + 1).padStart(2, "0")} · ${time} сек · ${title}`;
+      viewerDownload.href = `originals/${fileName(activeIndex, "png")}`;
+      viewerDownload.setAttribute("download", fileName(activeIndex, "png"));
+    }
+
+    function openViewer(index) {
+      activeIndex = index;
+      renderViewer();
+      viewer.showModal();
+    }
+
+    document.getElementById("viewerClose").addEventListener("click", () => viewer.close());
+    document.getElementById("prev").addEventListener("click", () => {
+      activeIndex = (activeIndex + frames.length - 1) % frames.length;
+      renderViewer();
+    });
+    document.getElementById("next").addEventListener("click", () => {
+      activeIndex = (activeIndex + 1) % frames.length;
+      renderViewer();
+    });
+    viewer.addEventListener("click", event => {
+      if (event.target === viewer) viewer.close();
+    });
+    document.addEventListener("keydown", event => {
+      if (!viewer.open) return;
+      if (event.key === "ArrowLeft") document.getElementById("prev").click();
+      if (event.key === "ArrowRight") document.getElementById("next").click();
+    });
+  </script>
+</body>
+</html>

@@ -322,20 +322,21 @@
   <main>
     <section class="intro">
       <h1>Раскадровка нейрохука</h1>
-      <p class="lead">Инженер чинит харвестер, открывает кабину, запрыгивает внутрь и разгоняется от первого лица к синему голему.</p>
+      <p class="lead">Инженер чинит огромный харвестер высотой примерно в два её роста, открывает кабину, запрыгивает внутрь и разгоняется от первого лица к синему голему.</p>
       <div class="stats" aria-label="Параметры раскадровки">
         <span class="stat">9 кадров</span>
         <span class="stat">6 секунд</span>
         <span class="stat">Вертикальный хук</span>
         <span class="stat">GPT Image 2</span>
+        <span class="stat">v2 · крупный харвестер</span>
       </div>
     </section>
 
     <section class="sheet" aria-labelledby="sheet-title">
-      <img src="images/storyboard-preview.webp" alt="Полная раскадровка из девяти кадров" width="1080" height="1660" fetchpriority="high" />
+      <img src="images/storyboard-preview-v2.webp" alt="Полная раскадровка из девяти кадров с увеличенным харвестером" width="1080" height="1660" fetchpriority="high" />
       <div class="sheet-actions">
         <h2 class="sheet-title" id="sheet-title">Полный лист 3×3</h2>
-        <a class="btn primary" href="originals/storyboard-3x3.png" download>⬇ Скачать лист PNG</a>
+        <a class="btn primary" href="originals/storyboard-3x3-v2.png" download>⬇ Скачать лист PNG</a>
       </div>
     </section>
 
@@ -380,7 +381,7 @@
     let activeIndex = 0;
 
     function fileName(index, extension) {
-      return `panel-${String(index + 1).padStart(2, "0")}.${extension}`;
+      return `panel-${String(index + 1).padStart(2, "0")}-v2.${extension}`;
     }
 
     frames.forEach(([time, title], index) => {

@@ -194,13 +194,13 @@
       border-color: var(--accent);
       color: var(--accent);
     }
-    button.primary {
+    button.primary, .btn.primary {
       background: linear-gradient(135deg, var(--accent), var(--accent2));
       border: none;
       color: #1a1200;
       font-weight: 650;
     }
-    button.primary:hover { filter: brightness(1.05); color: #1a1200; }
+    button.primary:hover, .btn.primary:hover { filter: brightness(1.05); color: #1a1200; }
     .empty {
       color: var(--muted);
       text-align: center;
@@ -250,7 +250,7 @@
           <button id="btnReplay" type="button">↺ Сначала</button>
           <button id="btnMute" type="button">🔊 Mute</button>
           <a class="btn" id="btnOpen" href="#" target="_blank" rel="noopener">↗ Открыть файл</a>
-          <a class="btn" id="btnDownload" href="#" download>⬇ Скачать</a>
+          <a class="btn primary" id="btnDownload" href="#" download aria-label="Скачать выбранное видео">⬇ Скачать MP4</a>
         </div>
         <p class="hint" style="margin-top:10px">
           Горячие клавиши: <kbd>Space</kbd> play/pause · <kbd>←</kbd>/<kbd>→</kbd> ±5с · <kbd>M</kbd> mute · <kbd>F</kbd> fullscreen
@@ -262,6 +262,7 @@
   <script>
     // Embedded catalog (regenerated with page). Paths relative to this HTML.
     const VIDEOS = [
+      {"name":"mars-harvester-engineer-hook-plus-gameplay-29s.mp4","sizeMB":24.86,"mtime":"2026-09-04 04:39","family":"s20","note":"Mars Harvester · инженерный нейрохук 6с + геймплей · 29с"},
       {"name":"tiger_crowd_blogger_dilator_7s_seedance25_480p_v2.mp4","sizeMB":3.34,"mtime":"2026-08-09 23:13","note":"Seedance 2.5 · crowd blogger dilator 7s 480p · v2 NEW"},
       {"name":"tiger_crowd_blogger_dilator_7s_seedance25_480p.mp4","sizeMB":2.43,"mtime":"2026-08-09 22:22","note":"Seedance 2.5 · crowd blogger dilator 7s 480p · v1"},
       {"name":"tiger_crowd_blogger_dilator_7s_480p.mp4","sizeMB":1.74,"mtime":"2026-08-09 16:49","note":"Seedance 2.0 (не 2.5) · crowd blogger"},
@@ -292,7 +293,7 @@
     ].map(v => ({
       ...v,
       src: "videos/" + v.name,
-      family: classify(v.name)
+      family: v.family || classify(v.name)
     }));
 
     function classify(name) {
@@ -447,12 +448,9 @@
       }
     });
 
-    // Boot: prefer newest Seedance 2.5 blogger clip
+    // Boot: open the newest gallery item so its download action is immediately available.
     renderList();
-    const preferred =
-      VIDEOS.find(v => v.name.includes("seedance25_480p") && v.name.includes("blogger")) ||
-      VIDEOS.find(v => v.family === "s25") ||
-      VIDEOS[0];
+    const preferred = getFiltered()[0] || VIDEOS[0];
     if (preferred) playItem(preferred, false);
   </script>
 </body>

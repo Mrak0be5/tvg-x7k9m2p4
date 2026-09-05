@@ -1,0 +1,17 @@
+Create one polished cinematic storyboard sheet for a 7-second mobile-game preroll hook using three strict references: the adult female engineer identity/outfit, the six-wheel bronze harvester identity with rear-hinged top hatch, and the exact first gameplay frame.
+
+Output exactly nine equal panels in a clean 3×3 portrait grid, chronological left-to-right and top-to-bottom, no captions or frame numbers. Stylized polished 3D mobile-game cinematic rendering on a warm orange desert.
+
+Panels 1–4 (0.00–3.00 s): close low rear three-quarter views of the same fully clothed adult engineer on hands and knees repairing a low pipe with a wrench. Her fitted mechanic jumpsuit and clothed rear are the main visual focus while hands, tool, pipe, sparks and a huge harvester wheel keep the repair action clear. In panel 4 she reacts to a rumble and looks toward one blue golem among red and blue crystals.
+
+Panel 5 (3.00–3.75 s): she rises, clips the wrench to her belt and faces the golem beside the harvester, which reads at least twice her size.
+
+Panel 6 (3.75–4.55 s): she climbs the side step and opens only the rear-hinged top cockpit hatch.
+
+Panel 7 (4.55–5.35 s): she climbs feet-first through the open top hatch while the golem advances.
+
+Panel 8 (5.35–6.20 s): first-person cockpit POV with the bronze hood, centered drill tip, exactly two control levers, one red start button and two gloved hands.
+
+Panel 9 (6.20–7.00 s): exact match-cut to the supplied overhead gameplay first frame, preserving terrain, UI, golem, crystals and harvester placement.
+
+Continuity constraints: exactly one adult engineer and one blue golem; same face, hair, outfit and proportions; same harvester geometry with exactly six wheels, front drill, side saw, exposed pipes, red beacon and top hatch. No side door, no hatch mirroring, no vehicle morphing, no extra limbs, no nudity, no sexual act, no text, logos or watermark.

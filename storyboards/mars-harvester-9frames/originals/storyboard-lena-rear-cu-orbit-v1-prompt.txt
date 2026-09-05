@@ -1,0 +1,54 @@
+Use case: stylized-concept
+Asset type: pre-production storyboard sheet for a 7-second cinematic, one production-ready raster image
+
+Input images:
+- Image 1: strict identity and wardrobe reference for Lena Voss.
+- Image 2: vehicle silhouette, materials, drill, saw, hatch and cockpit reference; reinterpret the running vehicle with EXACTLY EIGHT wheels as required below.
+- Image 3: crystal language, Mars gameplay environment and high three-quarter camera-language reference. Use its chunky blue crystal facets as the golem material, adding one glowing red crystal torso.
+
+Primary request:
+Create a dark pre-production storyboard sheet with exactly 3 columns by 3 rows. Nine separate 16:9 cinematic stills depict one chronological 7-second Mars sequence. Thin #1a1f28 cell borders, #0e1116 gutters. Below each cell, a compact dark label strip containing only the exact small white sans-serif label specified for that panel. A single header across the top reads exactly: "LENA VOSS  /  7s STORYBOARD  /  REAR CU ORBIT"
+
+Scene/backdrop:
+Orange Martian desert with #c47a45 sand and #8a4e2a rock, dusty golden hour, consistent color grade in all nine panels.
+
+Character lock:
+Lena Voss from Image 1 must be the same clearly adult 24-year-old woman in every panel that shows her: same face and body, messy dark-brown bun, pink-tinted goggles on her head, white cropped mechanic shirt with rolled sleeves and a pink schematic patch on the back, tight dirty-white cargo pants with a pink heart on the back-right pocket, hip tool pouches, fingerless gloves and pink-accent combat boots. Fully clothed in every shot.
+
+Vehicle lock:
+Use Image 2 as the strict silhouette and materials reference, but the production vehicle in this storyboard has EXACTLY EIGHT wheels total, four per side. Compact brass-gold Mars harvester, blue-grey corkscrew drill, one circular saw, riveted plates, red beacon, top cockpit hatch, black seat and twin control sticks. It is scaled to three times Lena's height while she works beside it. Same mechanical design in every panel.
+
+Creature lock:
+One walking colossal crystal golem built from Image 3's chunky cobalt-blue facets, with one glowing red crystal torso. Same creature design throughout, many times taller than the harvester when shown at full size.
+
+Read left to right, top to bottom:
+
+Panel 1, label exactly "01  0.0s  CU ORBIT LEFT": hip-height close-up, camera slightly to Lena's left. She is on all fours on the sand, back arched, hips the highest point, welding the harvester hull. The seat of her fully clothed cargo pants fills most of the frame. Drill and welding sparks are softly blurred in the background.
+
+Panel 2, label exactly "02  0.8s  CU REAR CENTER": same pose and body continuity, camera directly behind her. Straight rear angle, clothed hips filling the center, denser welding sparks, shallow focus.
+
+Panel 3, label exactly "03  1.6s  CU TIGHT": camera even closer after a small left-to-right orbit. Extreme close-up of clothed hips and back pockets, head and boots mostly outside the crop, spark bokeh above.
+
+Panel 4, label exactly "04  2.5s  ALL FOURS / GOLEM": still on all fours with the same rear-biased camera, Lena looks over her shoulder. The crystal golem enters on the right horizon, many times taller than the harvester.
+
+Panel 5, label exactly "05  3.2s  ALL FOURS / LOOK": clear four-point stance, welding torch lowered, Lena stares at the full-size golem on the ridge. Hips remain high and rear faces the camera.
+
+Panel 6, label exactly "06  3.9s  VAULT INTO HATCH": Lena vaults into the open TOP hatch of the Image 2 harvester. Mid-jump, one boot planted on the hull, rear toward camera, golem behind her. Hatch raised, black seat and twin sticks visible.
+
+Panel 7, label exactly "07  4.7s  COCKPIT FPS": first-person view from the driver's seat. Brass-gold riveted dashboard, exactly two wooden-knob joysticks, Lena's two gloved hands, a hint of pink goggles at the bottom edge, blue-grey corkscrew drill visible ahead and the golem dead ahead. Top hatch is dropping.
+
+Panel 8, label exactly "08  5.5s  FPS CHARGE": same driver POV while charging. Drill centered, dust rooster-tail, golem fills more of the frame. No HUD.
+
+Panel 9, label exactly "09  6.4s  CRANE-UP ISO": high three-quarter top-down view matching Image 3's camera language. The same brass eight-wheel harvester kicks a dust trail toward the walking crystal golem. No HUD, buttons or counters.
+
+Composition and constraints:
+- Exactly nine separate equal-size cells in a clean 3x3 grid; never merge, split, nest or omit cells.
+- Every cinematic still inside a cell is 16:9.
+- Same Lena identity, adult anatomy and outfit throughout.
+- Same eight-wheel vehicle silhouette and components throughout; exactly four wheels per side.
+- One golem, one Lena and one harvester only.
+- All requested actions must be visually readable.
+- Only the header and the nine exact labels may appear as text.
+- No HUD, no extra labels, logos, watermarks, people, vehicles or creatures.
+- No malformed hands, duplicated limbs, merged anatomy, floating tools, vehicle morphing, wheel-count drift, hatch relocation or inconsistent screen direction.
+- Non-nude, no transparent clothing and no sexual act.

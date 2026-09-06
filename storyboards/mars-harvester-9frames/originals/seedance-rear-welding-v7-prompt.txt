@@ -1,0 +1,21 @@
+Create one continuous 7-second vertical 9:16 cinematic Mars Harvester preroll with animated action. Render polished stylized 3D, warm orange Martian desert, dusty golden-hour light.
+
+REFERENCE ORDER:
+Image 1: Engineer Identity. Lena Voss is the same clearly adult 24-year-old woman throughout. Preserve face, curvy adult proportions, brown messy bun, pink goggles, cropped white mechanic shirt, fitted opaque white cargo pants with pink details, gloves, tool pouches and boots.
+Image 2: Harvester Identity. Preserve the brass-gold low-profile hull, exactly six road wheels (three per side), one front drill, one lateral saw, red beacon and single rear-hinged top hatch. Scale the entire vehicle uniformly: ground-to-roof height approximately THREE TIMES Lena's full standing height. One wheel is about her standing height. Preserve this scale across every shot.
+Image 3: Final Gameplay Match Frame. The terminal view matches its camera angle, position, vehicle heading, orange terrain, golem and crystal placement for the cut into the original gameplay.
+
+MANDATORY OPENING CAMERA LOCK, 0.00 THROUGH 3.00 SECONDS:
+For the ENTIRE first three seconds, use an EXTREME CLOSE-UP directly behind Lena at hip height. Her fully clothed buttocks in opaque fitted white cargo pants occupy approximately 65-75% of the picture width and most of the foreground, centered and closest to the camera. Crop tightly from the lower back to the upper thighs: her head, face, lower legs and boots are OUTSIDE the frame. Move the camera closer while preserving her natural body proportions. She remains on all fours beside the giant wheel, knees and supporting hand grounded, back arched naturally and hips raised. Her other gloved hand operates a welding torch against the METAL HUB OR RIM OF THE ROAD WHEEL. Keep just a narrow peripheral glimpse of the huge wheel and the torch-metal contact with blue-white arc and sparks. The wheel is background context; her clothed rear is the dominant foreground. A tiny smooth rear orbit and slight push-in are allowed. Maintain this SAME EXTREME CROP continuously from 0.00 through 3.00: never show her whole body, head or boots, never move to a front or side portrait, never widen and never cut away before 3.00 seconds. Natural adult anatomy, fully opaque clothing, no nudity or sexual act.
+
+0.00-1.00: EXTREME CLOSE-UP rear-left, opaque-clothed buttocks fill most foreground, framed from lower back to upper thighs; head and boots out of frame; wheel welding contact visible only at the edge.
+1.00-2.00: Same extreme crop, continuous action and pose, centered rear angle with a tiny camera orbit; clothed buttocks fill 65-75% of picture width; sparks visible at the edge.
+2.00-3.00: Even tighter rear push-in, same pose and wheel welding, head and boots still out of frame. Keep the full three-second extreme-close-up camera lock. No golem cutaway or wide shot yet.
+3.00-3.50: Camera widens for the first time. Lena stops welding and looks over her shoulder at one blue crystal golem among red and blue crystals. Show the huge harvester at about three times her standing height.
+3.50-4.10: She puts away the torch and opens the single rear-hinged TOP hatch upward. Keep the same hatch attachment and giant vehicle scale.
+4.10-4.80: She climbs using the vehicle's existing wheel/hull supports and quickly vaults feet-first into the open top cockpit. Plausible hand and foot contact, one engineer.
+4.80-5.50: True driver-eye POV. Her two gloved hands grip exactly two control levers; brass cockpit edges and centered drill ahead. The same top hatch moves down on its rear hinge.
+5.50-6.30: Same driver-eye POV accelerating toward the same golem. Dust, engine vibration and forward movement.
+6.30-7.00: Camera rises smoothly into the overhead gameplay view and resolves into Image 3's composition. Drill points toward the golem. Gameplay HUD only at the final match transition, if present in Image 3.
+
+No reference-sheet collage in the video, no captions, no extra people or vehicles, no duplicated anatomy, no floating tools, no pipe repair, no wrench replacing the welding torch, no tall cab, no side door, no hatch changing sides, no changing wheel count or vehicle scale. Duration 7 seconds, 480p, 9:16, one output, no generated audio.
